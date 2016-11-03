@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* --------------------------------- GLOBAL --------------------------------- */
+
+body {
+    height: 100%;
+    color: #ffffff;
+    background-color: #004258;
+    /* default font settings*/
+    font-family: "Helvetica Neue", Ariel, sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 100px;
+    text-shadow: 3px 3px 10px #000000;
+    margin: 0px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-shadow: 3px 3px 10px #000000;
+    margin: 0px;
+    display: block;
+    color: #dddd5d;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 20px;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+.caption {
+    font-size: 10px;
+    margin-top: 1px;
+    margin-right: 0px;
+    text-align: right;
+    text-shadow: 3px 3px 10px #000000;
+}
+
+.content {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: #dddd5d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+em {
+    color: #dddd5d;
+}
+
+.leftColumn {
+    width: 400px;
+    float: left;
+    margin-bottom: 75px;
+}
+
+.rightColumn {
+    width: 400px;
+    float: right;
+    text-align: right;
+    padding: 0px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 300px;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.45;
+    position: relative;
+    float: right;
+    color: #dddd5d;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+
+/* --------------------------------- HEADER --------------------------------- */
+
+header {
+    background-color: rgba(0, 0, 0, 0.70);
+    min-height: 100px;
+    padding: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+h1 {
+    margin-left: -9999px;
+    position: absolute;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+}
+
+
+/* ---------------------------------- NAV ----------------------------------- */
+
+#navbar {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+#nav li {
+    min-width: 75px;
+    float: left;
+}
+
+#nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#nav a:hover {
+    color: #dddd5d;
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .donate:hover {
+    color: #dddd5d;
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .current {
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .current:hover {
+    color: #dddd5d;
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .donate {
+    font-weight: bold;
+    color: #dddd5d;
+}
+
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.70);
+    min-height: 100px;
+    width: 100%;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    color: white;
+    bottom: 0px;
+    position: absolute;
+}
+
+#footer {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: auto 0px;
+    padding: 0px;
+}
+
+#footer li {
+    width: 100px;
+    float: left;
+}
+
+#footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#footer a:hover {
+    color: #F0F09C;
+    border-bottom: 3px solid #F0F09C;
+}
+
+#footer .current {
+    font-weight: bold;
+}
+
+
+/* ---------------------------------- HOME ---------------------------------- */
+
+
+/* ---------------------------------- HOME1 --------------------------------- */
+
+#home1 {
+    background: url("images/WS_Aquarium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#subtitle {
+    width: 400px;
+    align-content: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#first {
+    text-align: center;
+}
+
+
+/* --------------------------------- HOME2 ---------------------------------- */
+
+#home2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.facts {
+    margin: 1em 0;
+    padding: 0 1em;
+    list-style: none;
+}
+
+.facts li:before {
+    content: "";
+    border-color: transparent#dddd5d;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.5em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+
+.facts li {
+    margin: 30px 0px;
+    letter-spacing: .11em;
+}
+
+
+/* --------------------------------- HOME3 ---------------------------------- */
+
+#home3 {
+    background: url("images/WS_Rhincodon_typus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#home3 .content {
+    top: 300px;
+}
+
+
+/* --------------------------------- HOME4 ---------------------------------- */
+
+#home4 {
+    position: absolute;
+    top: 300%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#home4 .content {
+    top: 475px;
+}
+
+
+/* ---------------------------------- ABOUT --------------------------------- */
+
+
+/* ---------------------------------- ABOUT1 -------------------------------- */
+
+#about1 {
+    background: url("images/WS_Dive.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#subtitle {
+    width: 400px;
+    align-content: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#first {
+    text-align: center;
+}
+
+
+/* --------------------------------- ABOUT2 --------------------------------- */
+
+#about2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#about2 .content {
+    top: 475px;
+}
+
+
+/* ------------------------------- CONSERVATION ----------------------------- */
+
+
+/* ------------------------------- CONSERVATION1 ---------------------------- */
+
+#conservation1 {
+    background: url("images/WS_Shallow_Water.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#subtitle {
+    width: 400px;
+    align-content: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#first {
+    text-align: center;
+}
+
+
+/* ------------------------------- CONSERVATION2 ---------------------------- */
+
+#conservation2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#conservation2 .content {
+    top: 475px;
+}
+
+.button {
+    margin: 50px auto 30px auto;
+    clear: both;
+    width: 275px;
+    background-color: #dddd5d;
+}
+
+.button a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    color: #F0F09C;
+    border-bottom: 3px solid #F0F09C;
+}
+
+#nav .donate:hover {
+    color: #F0F09C;
+    border-bottom: 3px solid #F0F09C;
+}
+
+#nav .current {
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .current:hover {
+    color: #dddd5d;
+    border-bottom: 3px solid #dddd5d;
+}
+
+#nav .donate {
+    font-weight: bold;
+    color: #F0F09C;
+}
+
+
+/* ---------------------------------- DONATE -------------------------------- */
+
+
+/* ---------------------------------- DONATE1 -------------------------------- */
+
+#donate1 {
+    background: url("images/WS_Rhincodon_typus2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#subtitle {
+    width: 400px;
+    align-content: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#first {
+    text-align: center;
+}
+
+
+/* ---------------------------------- DONATE2 -------------------------------- */
+
+#donate2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#donate2 .content {
+    top: 475px;
+}
